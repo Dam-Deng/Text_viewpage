@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/id_switch_tab_11"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:id="@+id/id_tab_chat_11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+            <TextView
+                android:id="@+id/id_chat_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="聊天框"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_tab_friend_11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/id_friend_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="好友框"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_tab_contacts_11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+            <TextView
+                android:id="@+id/id_contacts_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="other框"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/id_tab_line_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:contentDescription="tab"
+        android:background="#00ff00"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ff0000"></View>
+</LinearLayout>
